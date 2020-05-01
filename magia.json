@@ -1,0 +1,34 @@
+[
+    {
+        "nazwa": "Ognista kula",
+        "opis": "Skoncentrowana moc pozwala na manifestację żywiołu w formie kuli",
+        "koszt": "10 zł",
+        "x": "449.5",
+        "y": "200",
+        "r": "8"
+    },
+    {
+        "nazwa": "lodowa kula",
+        "opis": "Skoncentrowana moc pozwala na manifestację żywiołu w formie kuli",
+        "koszt": "10 zł",
+        "x": "449.5",
+        "y": "300",
+        "r": "8"
+    },
+    {
+        "nazwa": "Plejsholder",
+        "opis": "Skoncentrowana moc pozwala na manifestację żywiołu w formie kuli",
+        "koszt": "10 zł",
+        "x": "600",
+        "y": "400",
+        "r": "8"
+    },
+    {
+        "nazwa": "Generyczna nazwa zeklęcia",
+        "opis": "Skoncentrowana moc pozwala na manifestację żywiołu w formie kuli",
+        "koszt": "10 zł",
+        "x": "300",
+        "y": "400",
+        "r": "8"
+    }
+]
