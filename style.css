@@ -1,0 +1,72 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+#container{
+    display: flex;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* LISTA */
+#lista{
+    background-color: #ddd;
+    width: 40rem;
+}
+ul{
+    width: 40rem;
+    height: 100vh;
+    padding: 0.5rem;
+    list-style-type: none;
+    overflow-y: auto;
+}
+li{
+    border: 1px solid black;
+    margin-bottom: 0.2rem; 
+}
+li p{
+    font-size: 3rem;
+    padding: 1rem;
+}
+li p:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* TABLICA MAGII */
+#tablicaMagii{
+    width: 90rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+#opisUm{
+    width: 40rem;
+    min-height: 30rem;
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    background-color: #444444;
+    padding: 2rem;
+    display: none;
+}
+#opisUm h1{
+    font-size: 4rem;
+}
+#opisUm p{
+    font-size: 2rem;
+}
+#opisWyl{
+    margin-top: 1rem;
+    cursor: pointer;
+}
