@@ -1,3 +1,7 @@
+var i = 0;
+const divLista = document.getElementById('lista');
+const otwieranieListy = document.getElementById('otwieranieListy');
+
 //Lista nicków
 const listaNickow = document.getElementById('listaNickow');
 let tabGraczy = [];
@@ -8,6 +12,7 @@ tworzenieListy = () => {
     listaNickow.innerHTML = tabGraczy.map( gracz => {
         return `<li class="elementListy"><p>${gracz.nick}</p></li>`;
     }).join("");
+    iventListyneryNaListe();
 }
 
 
@@ -16,11 +21,30 @@ tworzenieListy = () => {
 
 
 //Test pomyślny: event lisinery na elementy listy
-// const test = document.getElementsByClassName('elementListy');
-// console.log(test);
-// test[0].addEventListener('click', e => {
-//     console.log(e);
-// })
+iventListyneryNaListe = () => {
+    const wszyscyGracze = document.getElementsByClassName('elementListy');
+    var j = wszyscyGracze.length;
+    for(i = 0; i < j; i++)
+    {
+        if(i===0){
+            wszyscyGracze[0].addEventListener('click', e => {
+                divLista.style.display = "none";
+                otwieranieListy.style.display = "block";
+            })
+        }
+        else
+        {
+            wszyscyGracze[i].addEventListener('click', e => {
+                console.log(e);
+            })
+        }
+    }
+}
+//Otwieranie listy uprzednio zamkniętej
+otwieranieListy.addEventListener('click', e => {
+    divLista.style.display = "block";
+    otwieranieListy.style.display = "none";
+})
 
 
 //Tablica magii
@@ -38,8 +62,8 @@ pen.arc(449.5,449.5,449.5,0,Math.PI * 2,true);
 pen.stroke();
 pen.strokeRect(0,0,900,900);
 
+//Rysowanie curvy beziera
 pen.beginPath();
-
 pen.moveTo(0,449.5);
 pen.quadraticCurveTo(200,200,0,0);
 pen.quadraticCurveTo(200,200,449.5,0);
@@ -49,14 +73,12 @@ pen.quadraticCurveTo(700,700,900,900);
 pen.quadraticCurveTo(700,700,449.5,900);
 pen.quadraticCurveTo(200,700,0,900);
 pen.quadraticCurveTo(200,700,0,449.5);
-
 pen.stroke();
 
 
 tworzenieMagii = () => {
     //Rysowanie perko kropek
 
-    var i = 0;
     for(i = 0; i < tabMagia.length; i++)
     {
         var tpen = stol.getContext("2d");

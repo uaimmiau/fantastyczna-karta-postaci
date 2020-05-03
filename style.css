@@ -70,3 +70,19 @@ li p:hover{
     margin-top: 1rem;
     cursor: pointer;
 }
+
+/* OTWIERANIE LISTY */
+#otwieranieListy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    display: none;
+}
+#otwieranieListy:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
