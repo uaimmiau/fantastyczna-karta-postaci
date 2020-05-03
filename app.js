@@ -74,6 +74,75 @@ pen.quadraticCurveTo(700,700,449.5,900);
 pen.quadraticCurveTo(200,700,0,900);
 pen.quadraticCurveTo(200,700,0,449.5);
 pen.stroke();
+//Rysowanie kółek żywiołów
+pen.beginPath();
+pen.arc(180,180,50,0,Math.PI*2,true);
+pen.stroke();
+pen.beginPath();
+pen.arc(180,180,55,0,Math.PI*2,true);
+pen.stroke();
+let h1 = 60 * Math.cos(Math.PI / 6);
+pen.beginPath();
+pen.moveTo(150,157);
+pen.lineTo(210,157);
+pen.lineTo(180,157 + h1);
+pen.closePath();
+pen.stroke();
+pen.beginPath();
+pen.moveTo(150,190);
+pen.lineTo(210,190);
+pen.stroke();
+
+pen.beginPath();
+pen.arc(720,720,50,0,Math.PI*2,true);
+pen.stroke();
+pen.beginPath();
+pen.arc(720,720,55,0,Math.PI*2,true);
+pen.stroke();
+let h2 = 60 * Math.cos(Math.PI / 6);
+pen.beginPath();
+pen.moveTo(750,697);
+pen.lineTo(690,697);
+pen.lineTo(720,697 + h2);
+pen.closePath();
+pen.stroke();
+
+pen.beginPath();
+pen.arc(720,180,50,0,Math.PI*2,true);
+pen.stroke();
+pen.beginPath();
+pen.arc(720,180,55,0,Math.PI*2,true);
+pen.stroke();
+let h3 = 60 * Math.cos(Math.PI / 6);
+pen.beginPath();
+pen.moveTo(750,203);
+pen.lineTo(690,203);
+pen.lineTo(720,203 - h3);
+pen.closePath();
+pen.stroke();
+pen.beginPath();
+pen.moveTo(750,170);
+pen.lineTo(690,170);
+pen.stroke();
+
+pen.beginPath();
+pen.arc(180,720,50,0,Math.PI*2,true);
+pen.stroke();
+pen.beginPath();
+pen.arc(180,720,55,0,Math.PI*2,true);
+pen.stroke();
+let h4 = 60 * Math.cos(Math.PI / 6);
+pen.beginPath();
+pen.moveTo(150,743);
+pen.lineTo(210,743);
+pen.lineTo(180,743 - h4);
+pen.closePath();
+pen.stroke();
+
+
+
+
+
 
 
 tworzenieMagii = () => {
