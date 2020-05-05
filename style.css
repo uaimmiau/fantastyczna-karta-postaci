@@ -52,11 +52,11 @@ li p:hover{
 }
 #opisUm{
     width: 40rem;
-    min-height: 30rem;
+    min-height: 50vh;
     position: absolute;
     left: 0;
     top: 50vh;
-    background-color: #444444;
+    background-image: url(img/opis_test.png);
     padding: 2rem;
     display: none;
 }
