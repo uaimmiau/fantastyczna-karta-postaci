@@ -52,19 +52,23 @@ li p:hover{
 }
 #opisUm{
     width: 40rem;
-    min-height: 50vh;
+    height: 50vh;
     position: absolute;
     left: 0;
     top: 50vh;
     background-image: url(img/opis_test.png);
-    padding: 2rem;
+    padding: 5.7rem;
+    padding-top: 7rem;
     display: none;
+    color: #422E16;
 }
 #opisUm h1{
     font-size: 4rem;
 }
 #opisUm p{
     font-size: 2rem;
+    max-height: 20vh;
+    overflow: auto;
 }
 #opisWyl{
     margin-top: 1rem;
