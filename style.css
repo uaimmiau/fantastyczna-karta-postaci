@@ -14,8 +14,12 @@
 }
 #main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+}
+p{
+    white-space: pre-line;
 }
 
 /* LISTA */
@@ -46,8 +50,8 @@ li p:hover{
 /* TABLICA MAGII */
 #tablicaMagii{
     width: 90rem;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     margin-top: 2rem;
 }
 #opisUm{
@@ -77,16 +81,41 @@ li p:hover{
 
 /* OTWIERANIE LISTY */
 #otwieranieListy{
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* width: 20rem; */
+    position: relative;
+    margin-bottom: 0;
     font-size: 3rem;
     padding: 1rem;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
+    border: 1px solid #000;
+    /* border-right: 1px solid #000; */
     display: none;
 }
 #otwieranieListy:hover{
     cursor: pointer;
     background-color: #ccc;
 }
+
+/* LEWA STRONA */
+#lewastrona,#prawastrona{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2rem;
+    max-width: 40rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRAWA STRONA */

@@ -15,7 +15,29 @@ tworzenieListy = () => {
     iventListyneryNaListe();
 }
 
+//Get element by id
+const klasaT = document.getElementById('klasaT');
+const specT = document.getElementById('specT');
+const rasaT = document.getElementById('rasaT');
+const historiaT = document.getElementById('historiaT');
+const statyT = document.getElementById('statyT');
+const punktynaukiT = document.getElementById('punktynaukiT');
+const cechy = document.getElementById('cechy');
 
+//Wypełnianie pól ich zawartością
+wypelnianieStatystyk = pole => {
+    const wszyscyGracze = document.getElementsByClassName('elementListy');
+    wszyscyGracze[pole].addEventListener('click', e => {
+        klasaT.innerText = `Klasa: ${tabGraczy[pole].klasa}`;
+        specT.innerText = `Specjalizacja: ${tabGraczy[pole].specjalizacja}`;
+        rasaT.innerHTML = `${tabGraczy[pole].rasa}`;
+        historiaT.innerText = `${tabGraczy[pole].historia}`;
+        statyT.innerText = `Siła: ${tabGraczy[pole].statystyka1} Zwinność: ${tabGraczy[pole].statystyka2} Szypkość: ${tabGraczy[pole].statystyka3} Inteligencja: ${tabGraczy[pole].statystyka4}`;
+        punktynaukiT.innerText = `PN: ${tabGraczy[pole].punktynauki}`;
+        cechy.innerHTML = `<p>Cechy:</p><p>${tabGraczy[pole].cecha1}</p><p>${tabGraczy[pole].cecha2}</p><p>${tabGraczy[pole].cecha3}</p>`
+    })
+
+}
 
 
 
@@ -34,10 +56,10 @@ iventListyneryNaListe = () => {
         }
         else
         {
-            wszyscyGracze[i].addEventListener('click', e => {
-                console.log(e);
-            })
+            wypelnianieStatystyk(i);
+            // console.log(i)
         }
+        
     }
 }
 //Otwieranie listy uprzednio zamkniętej

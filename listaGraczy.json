@@ -3,10 +3,34 @@
         "nick": "Zminimalizuj"
     },
     {
-        "nick": "Kroomek"
+        "nick": "Kroomek",
+        "klasa": "Wielki strateg",
+        "specjalizacja": "f1",
+        "rasa": "chleb",
+        "historia": "aaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaa aaaaa aaaa aaaaaaaa",
+        "statystyka1": "1",
+        "statystyka2": "20",
+        "statystyka3": "20",
+        "statystyka4": "10",
+        "punktynauki": "5",
+        "cecha1": "lubi chlebek",
+        "cecha2": "tu wpisać nazwe",
+        "cecha3": ""
     },
     {
-        "nick": "Queltas"
+        "nick": "Queltas",
+        "klasa": "kiełbasa",
+        "specjalizacja": "u02 hehe",
+        "rasa": "&#10078;człowiek&#10078;",
+        "historia": "aaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaa aaaaa aaaa aaaaaaaa bardzo długa histria, testy co będzie jak będzie dużo tekstu tutaj costam costam ",
+        "statystyka1": "1",
+        "statystyka2": "30",
+        "statystyka3": "2",
+        "statystyka4": "10",
+        "punktynauki": "3",
+        "cecha1": "jest klonem onde",
+        "cecha2": "tu wpisać nazwe",
+        "cecha3": "albo na odwrót"
     },
     {
         "nick": "Uaimmiau"
